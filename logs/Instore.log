@@ -1,0 +1,793 @@
+2022-08-18 10:04:21.742  INFO 10760 --- [main] com.jadm.JadmBbookOcApplication          : Starting JadmBbookOcApplication using Java 11.0.15 on DESKTOP-8TH12GD with PID 10760 (C:\Users\ivega\Documents\workspace-spring-tool-suite-4-4.3.1.RELEASE\jadm-bbook-oc\target\classes started by ivega in C:\Users\ivega\Documents\workspace-spring-tool-suite-4-4.3.1.RELEASE\jadm-bbook-oc)
+2022-08-18 10:04:21.758  INFO 10760 --- [main] com.jadm.JadmBbookOcApplication          : No active profile set, falling back to default profiles: default
+2022-08-18 10:04:23.149  INFO 10760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-18 10:04:23.306  INFO 10760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 5 JPA repository interfaces.
+2022-08-18 10:04:24.352  INFO 10760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-18 10:04:24.358  INFO 10760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-18 10:04:24.358  INFO 10760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2022-08-18 10:04:24.358  INFO 10760 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-08-18 10:04:24.358  INFO 10760 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-08-18 10:04:24.358  INFO 10760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-08-18 10:04:24.358  INFO 10760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-18 10:04:24.374  INFO 10760 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-08-18 10:04:24.546  INFO 10760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-18 10:04:24.546  INFO 10760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2710 ms
+2022-08-18 10:04:25.827  INFO 10760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-18 10:04:25.889  INFO 10760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-18 10:04:26.045  INFO 10760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-18 10:04:26.076 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@24d8f87a
+2022-08-18 10:04:26.076 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@24d8f87a
+2022-08-18 10:04:26.076 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@24d8f87a
+2022-08-18 10:04:26.076 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7e191fda
+2022-08-18 10:04:26.076 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@e3899fd
+2022-08-18 10:04:26.076 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@47187f50
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@6b42e36d
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@6b42e36d
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6b42e36d
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@4f3c7808
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@4f3c7808
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4f3c7808
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3de79067
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3de79067
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3de79067
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@3a6e9856
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@3a6e9856
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3a6e9856
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4c4c7d6c
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4c4c7d6c
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@4c4c7d6c
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@1ecf0ac6
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@1ecf0ac6
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1ecf0ac6
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@6cc48a17
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@6cc48a17
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6cc48a17
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3711c71c
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3711c71c
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1bee0085
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1bee0085
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@5403907
+2022-08-18 10:04:26.092 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@5403907
+2022-08-18 10:04:26.107 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@656c5c3
+2022-08-18 10:04:26.107 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@242ff747
+2022-08-18 10:04:26.107 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@66713605
+2022-08-18 10:04:26.123 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@66713605
+2022-08-18 10:04:26.123 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@1c7f9861
+2022-08-18 10:04:26.123 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1c7f9861
+2022-08-18 10:04:26.123 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@2e0ad709
+2022-08-18 10:04:26.123 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2e0ad709
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@53016b11
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@53016b11
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1693ff90
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1693ff90
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@51f68849
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@51f68849
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2f4d32bf
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2f4d32bf
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@34009349
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@34009349
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@39f0c343
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@39f0c343
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@19cdc217
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@19cdc217
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@47fb7ec9
+2022-08-18 10:04:26.139 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@47fb7ec9
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@76e4212
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@76e4212
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@76e4212
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7faa0680
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@150fc7a7
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@150fc7a7
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@150fc7a7
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1be52861
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@67d8faec
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@62cf6a84
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@62cf6a84
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@35f7969d
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@35f7969d
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@2616b618
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2616b618
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@1b46392c
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1b46392c
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2becfd4c
+2022-08-18 10:04:26.154 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2becfd4c
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@101330ad
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@74697863
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@74697863
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@74697863
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@626c569b
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@626c569b
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@626c569b
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@d36c1c3
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@787178b1
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@9a9aa68
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@9a9aa68
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@9a9aa68
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7708b66a
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7708b66a
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7708b66a
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@359ceb13
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@23ee2ccf
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@16f15ae9
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@16f15ae9
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@40a1b6d4
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@1860a7a1
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1860a7a1
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@21002393
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@21002393
+2022-08-18 10:04:26.186 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@45d4421d
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@50122012
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@3e9beef2
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@133aacbe
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@133aacbe
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@19002b34
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1ec88aa1
+2022-08-18 10:04:26.201 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3e6748ae
+2022-08-18 10:04:26.217 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@28f154cc
+2022-08-18 10:04:26.217 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3030836d
+2022-08-18 10:04:26.217 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6af78a48
+2022-08-18 10:04:26.217 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6ed18d80
+2022-08-18 10:04:26.217 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4c24f3a2
+2022-08-18 10:04:26.295  INFO 10760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-18 10:04:54.778  INFO 10760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-18 10:04:54.794  INFO 10760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-08-18 10:04:55.625 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.MaterializedBlobType@40a1b6d4
+2022-08-18 10:04:55.626 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@74697863
+2022-08-18 10:04:55.626 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.MaterializedBlobType@40a1b6d4
+2022-08-18 10:04:55.626 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@74697863
+2022-08-18 10:04:55.626 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrappedMaterializedBlobType@32e830a0
+2022-08-18 10:04:55.627 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@626c569b
+2022-08-18 10:04:55.627 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrappedMaterializedBlobType@32e830a0
+2022-08-18 10:04:55.627 DEBUG 10760 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@626c569b
+2022-08-18 10:04:55.629 DEBUG 10760 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@74764622] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7ba06506]
+2022-08-18 10:04:56.377 DEBUG 10760 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@74764622] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@460eb276]
+2022-08-18 10:04:57.696  INFO 10760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-18 10:04:57.712 TRACE 10760 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@460eb276] for TypeConfiguration
+2022-08-18 10:04:57.728  INFO 10760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-18 10:04:59.244  WARN 10760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-18 10:05:00.260  INFO 10760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-18 10:05:00.283  INFO 10760 --- [main] com.jadm.JadmBbookOcApplication          : Started JadmBbookOcApplication in 39.399 seconds (JVM running for 42.01)
+2022-08-18 10:09:03.362  INFO 10760 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-18 10:09:03.363  INFO 10760 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-18 10:09:03.365  INFO 10760 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-18 10:09:03.894 DEBUG 10760 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select bbookjson0_.bk_id as bk_id1_0_, bbookjson0_.bk_json as bk_json2_0_, bbookjson0_.download_date as download_date3_0_ from bbook_json bbookjson0_
+2022-08-18 10:09:04.135 TRACE 10760 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([bk_id1_0_] : [BIGINT]) - [181]
+2022-08-18 10:09:04.151 TRACE 10760 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([bk_json2_0_] : [CLOB]) - [{
+  "data": {
+    "id_document": 1197,
+    "proforma_invoice": "22JC037",
+    "po_type": "I",
+    "distribution": "S",
+    "is_style_prepack": false,
+    "vendor": {
+      "id": "1018",
+      "name": "NANJING CO LT"
+    },
+    "buyer": {
+      "id": "BSOTO",
+      "name": "BYRON SOTO"
+    },
+    "dates": {
+      "delivery": "20220728",
+      "shipment": "20220811",
+      "reception": "20221006",
+      "cancellation": "20221006"
+    },
+    "import_factor": 1.27,
+    "change_type": 4.1,
+    "port_of_loading": {
+      "id": "44",
+      "name": "SHANGHAI"
+    },
+    "port_of_discharge": {
+      "id": "986",
+      "name": "Valparaiso"
+    },
+    "payment_terms": "TT DEFERRED 60 DAYS SHIPM",
+    "incoterm": "FOB",
+    "currency": "USD",
+    "destination": {
+      "id": "901",
+      "name": "CD Renca"
+    },
+	"attributes": [
+		{"code": "TE", "name": "Temporada Especial", "value": "OI23"}
+	],	
+    "products": [
+      {
+        "sku": "5646465",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V4 MES",
+        "dim_value": "NEGRO",
+        "size": "-",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      },
+      {
+        "sku": "2150968",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V5 MES",
+        "dim_value": "SALMON",
+        "size": "m",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      },
+      {
+        "sku": "2150967",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V5 MES",
+        "dim_value": "TAUPE",
+        "size": "X",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      }
+	]
+	}
+}]
+2022-08-18 10:09:04.151 TRACE 10760 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date3_0_] : [TIMESTAMP]) - [null]
+2022-08-18 10:09:04.152 TRACE 10760 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([bk_id1_0_] : [BIGINT]) - [188]
+2022-08-18 10:09:04.153 TRACE 10760 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([bk_json2_0_] : [CLOB]) - [{
+  "data": {
+    "id_document": 1197,
+    "proforma_invoice": "22JC037",
+    "po_type": "I",
+    "distribution": "S",
+    "is_style_prepack": false,
+    "vendor": {
+      "id": "1018",
+      "name": "NANJING CO LT"
+    },
+    "buyer": {
+      "id": "BSOTO",
+      "name": "BYRON SOTO"
+    },
+    "dates": {
+      "delivery": "20220728",
+      "shipment": "20220811",
+      "reception": "20221006",
+      "cancellation": "20221006"
+    },
+    "import_factor": 1.27,
+    "change_type": 4.1,
+    "port_of_loading": {
+      "id": "44",
+      "name": "SHANGHAI"
+    },
+    "port_of_discharge": {
+      "id": "986",
+      "name": "Valparaiso"
+    },
+    "payment_terms": "TT DEFERRED 60 DAYS SHIPM",
+    "incoterm": "FOB",
+    "currency": "USD",
+    "destination": {
+      "id": "901",
+      "name": "CD Renca"
+    },
+	"attributes": [
+		{"code": "TE", "name": "Temporada Especial", "value": "OI23"}
+	],	
+    "products": [
+      {
+        "sku": "5646465",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V4 MES",
+        "dim_value": "NEGRO",
+        "size": "-",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      },
+      {
+        "sku": "2150968",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V5 MES",
+        "dim_value": "SALMON",
+        "size": "m",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      },
+      {
+        "sku": "2150967",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V5 MES",
+        "dim_value": "TAUPE",
+        "size": "X",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      }
+	]
+	}
+}]
+2022-08-18 10:09:04.155 TRACE 10760 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date3_0_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.137 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select bbook_number.nextval from dual
+2022-08-18 10:10:40.170 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([NEXTVAL] : [NUMERIC]) - [261]
+2022-08-18 10:10:40.223 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select bbookjson0_.bk_id as bk_id1_0_0_, bbookjson0_.bk_json as bk_json2_0_0_, bbookjson0_.download_date as download_date3_0_0_ from bbook_json bbookjson0_ where bbookjson0_.bk_id=?
+2022-08-18 10:10:40.230 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:40.280 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into bbook_json (download_date, bk_id, bk_json) values (?, ?, ?)
+2022-08-18 10:10:40.282 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [null]
+2022-08-18 10:10:40.282 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [261]
+2022-08-18 10:10:40.283 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [CLOB] - [{
+  "data": {
+    "id_document": 1197,
+    "proforma_invoice": "22JC037",
+    "po_type": "I",
+    "distribution": "S",
+    "is_style_prepack": false,
+    "vendor": {
+      "id": "1018",
+      "name": "NANJING CO LT"
+    },
+    "buyer": {
+      "id": "BSOTO",
+      "name": "BYRON SOTO"
+    },
+    "dates": {
+      "delivery": "20220728",
+      "shipment": "20220811",
+      "reception": "20221006",
+      "cancellation": "20221006"
+    },
+    "import_factor": 1.27,
+    "change_type": 4.1,
+    "port_of_loading": {
+      "id": "44",
+      "name": "SHANGHAI"
+    },
+    "port_of_discharge": {
+      "id": "986",
+      "name": "Valparaiso"
+    },
+    "payment_terms": "TT DEFERRED 60 DAYS SHIPM",
+    "incoterm": "FOB",
+    "currency": "USD",
+    "destination": {
+      "id": "901",
+      "name": "CD Renca"
+    },
+	"attributes": [
+		{"code": "TE", "name": "Temporada Especial", "value": "OI23"}
+	],	
+    "products": [
+      {
+        "sku": "5646465",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V4 MES",
+        "dim_value": "NEGRO",
+        "size": "-",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      },
+      {
+        "sku": "2150968",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V5 MES",
+        "dim_value": "SALMON",
+        "size": "m",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      },
+      {
+        "sku": "2150967",
+        "total_units": 36,
+        "unit_cost": 40.5,
+        "description": "PV23 ZA CHML HIGH NECK CI V5 MES",
+        "dim_value": "TAUPE",
+        "size": "X",
+        "total_cost_local": 7591.81,
+        "destination": [
+          {
+            "id": "901",
+            "name": "CD",
+            "units": 23
+          }
+        ]
+      }
+	]
+	}
+}]
+2022-08-18 10:10:40.384 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : {call BBOOK_CARGA_OC(?,?,?)}
+2022-08-18 10:10:40.415 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [in_num_proc] as [BIGINT] - [261]
+2022-08-18 10:10:40.534 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted named procedure output  parameter ([ou_Status_Proc] : [BIGINT]) - [0]
+2022-08-18 10:10:40.535 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted named procedure output  parameter ([ou_Desc_Error] : [VARCHAR]) - [TERMINO Proceso 18/08/22]
+2022-08-18 10:10:40.544  INFO 10760 --- [http-nio-8080-exec-4] com.jadm.service.BbookGeneralService     : strDir (user.dir) = (C:\Users\ivega\Documents\workspace-spring-tool-suite-4-4.3.1.RELEASE\jadm-bbook-oc)
+2022-08-18 10:10:40.604 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select bbooksdipm0_.audit_number as audit_number1_1_, bbooksdipm0_.batch_num as batch_num2_1_, bbooksdipm0_.date_created as date_created3_1_, bbooksdipm0_.download_date_1 as download_date_4_1_, bbooksdipm0_.download_date_2 as download_date_5_1_, bbooksdipm0_.fecha_backup as fecha_backup6_1_, bbooksdipm0_.fecha_permanente as fecha_permanente7_1_, bbooksdipm0_.fecha_stage as fecha_stage8_1_, bbooksdipm0_.nombre_archivo as nombre_archivo9_1_, bbooksdipm0_.org_lvl_number as org_lvl_number10_1_, bbooksdipm0_.pmg_amount as pmg_amount11_1_, bbooksdipm0_.pmg_calc_level as pmg_calc_level12_1_, bbooksdipm0_.pmg_end_date as pmg_end_date13_1_, bbooksdipm0_.pmg_ext_po_num as pmg_ext_po_num14_1_, bbooksdipm0_.pmg_gross_net as pmg_gross_net15_1_, bbooksdipm0_.pmg_line_number as pmg_line_number16_1_, bbooksdipm0_.pmg_percent as pmg_percent17_1_, bbooksdipm0_.pmg_po_number as pmg_po_number18_1_, bbooksdipm0_.pmg_start_date as pmg_start_date19_1_, bbooksdipm0_.prd_lvl_id as prd_lvl_id20_1_, bbooksdipm0_.prd_lvl_number as prd_lvl_number21_1_, bbooksdipm0_.tran_type as tran_type22_1_, bbooksdipm0_.vendor_number as vendor_number23_1_, bbooksdipm0_.vpc_alloc_desc as vpc_alloc_desc24_1_, bbooksdipm0_.vpc_alw_desc as vpc_alw_desc25_1_, bbooksdipm0_.vpc_alw_key as vpc_alw_key26_1_, bbooksdipm0_.vpc_case_pack_id as vpc_case_pack_id27_1_, bbooksdipm0_.vpc_cb_desc as vpc_cb_desc28_1_, bbooksdipm0_.vpc_evnt_type as vpc_evnt_type29_1_, bbooksdipm0_.vpc_prod_vend_flag as vpc_prod_vend_fla30_1_, bbooksdipm0_.vpc_svc_vend_flag as vpc_svc_vend_flag31_1_, bbooksdipm0_.weight_type as weight_type32_1_, bbooksdipm0_.weight_uom as weight_uom33_1_ from bbook_sdipmgcai bbooksdipm0_ where (bbooksdipm0_.download_date_1 is null) and bbooksdipm0_.batch_num=?
+2022-08-18 10:10:40.606 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:40.677 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select bbooksdiva0_.audit_number as audit_number1_4_, bbooksdiva0_.batch_num as batch_num2_4_, bbooksdiva0_.date_created as date_created3_4_, bbooksdiva0_.download_date_1 as download_date_4_4_, bbooksdiva0_.download_date_2 as download_date_5_4_, bbooksdiva0_.entity_name as entity_name6_4_, bbooksdiva0_.fecha_backup as fecha_backup7_4_, bbooksdiva0_.fecha_permanente as fecha_permanente8_4_, bbooksdiva0_.fecha_stage as fecha_stage9_4_, bbooksdiva0_.field_code as field_code10_4_, bbooksdiva0_.nombre_archivo as nombre_archivo11_4_, bbooksdiva0_.org_lvl_id as org_lvl_id12_4_, bbooksdiva0_.org_lvl_number as org_lvl_number13_4_, bbooksdiva0_.pmg_dtl_tech_key as pmg_dtl_tech_key14_4_, bbooksdiva0_.pmg_ext_po_num as pmg_ext_po_num15_4_, bbooksdiva0_.pmg_line_number as pmg_line_number16_4_, bbooksdiva0_.pmg_po_number as pmg_po_number17_4_, bbooksdiva0_.prd_lvl_id as prd_lvl_id18_4_, bbooksdiva0_.prd_lvl_number as prd_lvl_number19_4_, bbooksdiva0_.tran_type as tran_type20_4_, bbooksdiva0_.val_err_code as val_err_code21_4_, bbooksdiva0_.value as value22_4_, bbooksdiva0_.vendor_number as vendor_number23_4_, bbooksdiva0_.vpc_case_pack_id as vpc_case_pack_id24_4_, bbooksdiva0_.vpc_shp_point as vpc_shp_point25_4_ from bbook_sdivalmsi bbooksdiva0_ where (bbooksdiva0_.download_date_1 is null) and bbooksdiva0_.batch_num=?
+2022-08-18 10:10:40.678 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:40.708 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([audit_number1_4_] : [BIGINT]) - [266]
+2022-08-18 10:10:40.709 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([batch_num2_4_] : [BIGINT]) - [261]
+2022-08-18 10:10:40.709 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_created3_4_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.709 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_4_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.709 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_5_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.710 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([entity_name6_4_] : [VARCHAR]) - [PMGHDREE]
+2022-08-18 10:10:40.711 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_backup7_4_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.712 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_permanente8_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.712 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_stage9_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.713 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([field_code10_4_] : [VARCHAR]) - [PE]
+2022-08-18 10:10:40.714 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre_archivo11_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.715 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_id12_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.720 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_number13_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.720 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_tech_key14_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.720 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_po_num15_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.720 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_line_number16_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.721 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_number17_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.721 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_id18_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.721 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_number19_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.721 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([tran_type20_4_] : [VARCHAR]) - [A]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([val_err_code21_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([value22_4_] : [VARCHAR]) - [44]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vendor_number23_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_pack_id24_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_shp_point25_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([audit_number1_4_] : [BIGINT]) - [267]
+2022-08-18 10:10:40.722 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([batch_num2_4_] : [BIGINT]) - [261]
+2022-08-18 10:10:40.723 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_created3_4_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.723 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_4_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.724 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_5_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.724 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([entity_name6_4_] : [VARCHAR]) - [PMGHDREE]
+2022-08-18 10:10:40.724 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_backup7_4_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.724 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_permanente8_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.730 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_stage9_4_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.730 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([field_code10_4_] : [VARCHAR]) - [TE]
+2022-08-18 10:10:40.731 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre_archivo11_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.731 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_id12_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_number13_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_tech_key14_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_po_num15_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_line_number16_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_number17_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_id18_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_number19_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([tran_type20_4_] : [VARCHAR]) - [A]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([val_err_code21_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([value22_4_] : [VARCHAR]) - [OI23]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vendor_number23_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_pack_id24_4_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.733 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_shp_point25_4_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.778 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select bbooksdipm0_.audit_number as audit_number1_2_, bbooksdipm0_.batch_num as batch_num2_2_, bbooksdipm0_.date_created as date_created3_2_, bbooksdipm0_.distro_id as distro_id4_2_, bbooksdipm0_.dmt_code as dmt_code5_2_, bbooksdipm0_.download_date_1 as download_date_6_2_, bbooksdipm0_.download_date_2 as download_date_7_2_, bbooksdipm0_.fecha_backup as fecha_backup8_2_, bbooksdipm0_.fecha_permanente as fecha_permanente9_2_, bbooksdipm0_.fecha_stage as fecha_stage10_2_, bbooksdipm0_.fob_terms_desc as fob_terms_desc11_2_, bbooksdipm0_.frt_terms_desc as frt_terms_desc12_2_, bbooksdipm0_.net_cost_flag as net_cost_flag13_2_, bbooksdipm0_.nombre_archivo as nombre_archivo14_2_, bbooksdipm0_.org_lvl_number as org_lvl_number15_2_, bbooksdipm0_.pmg_aal_method as pmg_aal_method16_2_, bbooksdipm0_.pmg_allocator as pmg_allocator17_2_, bbooksdipm0_.pmg_apply_buy_multiple as pmg_apply_buy_mul18_2_, bbooksdipm0_.pmg_apply_dc_pack as pmg_apply_dc_pack19_2_, bbooksdipm0_.pmg_call_off_po as pmg_call_off_po20_2_, bbooksdipm0_.pmg_cancel_date as pmg_cancel_date21_2_, bbooksdipm0_.pmg_cncl_by_date as pmg_cncl_by_date22_2_, bbooksdipm0_.pmg_dc_pack_qty as pmg_dc_pack_qty23_2_, bbooksdipm0_.pmg_dist_sell_qty as pmg_dist_sell_qty24_2_, bbooksdipm0_.pmg_dtl_tech_key as pmg_dtl_tech_key25_2_, bbooksdipm0_.pmg_dtl_type as pmg_dtl_type26_2_, bbooksdipm0_.pmg_exp_rct_date as pmg_exp_rct_date27_2_, bbooksdipm0_.pmg_ext_po_num as pmg_ext_po_num28_2_, bbooksdipm0_.pmg_ext_rct_date as pmg_ext_rct_date29_2_, bbooksdipm0_.pmg_fob as pmg_fob30_2_, bbooksdipm0_.pmg_line_number as pmg_line_number31_2_, bbooksdipm0_.pmg_loc_curr as pmg_loc_curr32_2_, bbooksdipm0_.pmg_manual_dist as pmg_manual_dist33_2_, bbooksdipm0_.pmg_otb_bud_date as pmg_otb_bud_date34_2_, bbooksdipm0_.pmg_pack_cost as pmg_pack_cost35_2_, bbooksdipm0_.pmg_pack_net_cost as pmg_pack_net_cost36_2_, bbooksdipm0_.pmg_pack_qty as pmg_pack_qty37_2_, bbooksdipm0_.pmg_pay_date as pmg_pay_date38_2_, bbooksdipm0_.pmg_pis_date as pmg_pis_date39_2_, bbooksdipm0_.pmg_po_notes as pmg_po_notes40_2_, bbooksdipm0_.pmg_po_number as pmg_po_number41_2_, bbooksdipm0_.pmg_prd_vendor as pmg_prd_vendor42_2_, bbooksdipm0_.pmg_reallocate as pmg_reallocate43_2_, bbooksdipm0_.pmg_recv_notes as pmg_recv_notes44_2_, bbooksdipm0_.pmg_res_sell_qty as pmg_res_sell_qty45_2_, bbooksdipm0_.pmg_retail as pmg_retail46_2_, bbooksdipm0_.pmg_sell_cost as pmg_sell_cost47_2_, bbooksdipm0_.pmg_sell_qty as pmg_sell_qty48_2_, bbooksdipm0_.pmg_seq_num as pmg_seq_num49_2_, bbooksdipm0_.pmg_ship_date as pmg_ship_date50_2_, bbooksdipm0_.pmg_ship_via as pmg_ship_via51_2_, bbooksdipm0_.pmg_spread_mult as pmg_spread_mult52_2_, bbooksdipm0_.pmg_tax_exc_hm as pmg_tax_exc_hm53_2_, bbooksdipm0_.pmg_tax_exc_lc as pmg_tax_exc_lc54_2_, bbooksdipm0_.pmg_tax_exc_po as pmg_tax_exc_po55_2_, bbooksdipm0_.pmg_tot_tax_hm as pmg_tot_tax_hm56_2_, bbooksdipm0_.pmg_tot_tax_po as pmg_tot_tax_po57_2_, bbooksdipm0_.pmg_track_code as pmg_track_code58_2_, bbooksdipm0_.prd_cross_dock as prd_cross_dock59_2_, bbooksdipm0_.prd_lvl_number as prd_lvl_number60_2_, bbooksdipm0_.prd_upc as prd_upc61_2_, bbooksdipm0_.rcv_qc_exp as rcv_qc_exp62_2_, bbooksdipm0_.ship_via_desc as ship_via_desc63_2_, bbooksdipm0_.style_prd_lvl_nbr as style_prd_lvl_nbr64_2_, bbooksdipm0_.tran_type as tran_type65_2_, bbooksdipm0_.trf_alloc_id as trf_alloc_id66_2_, bbooksdipm0_.vpc_apt_desc as vpc_apt_desc67_2_, bbooksdipm0_.vpc_case_pack_id as vpc_case_pack_id68_2_, bbooksdipm0_.vpc_case_qty as vpc_case_qty69_2_, bbooksdipm0_.vpc_case_std_pack as vpc_case_std_pack70_2_ from bbook_sdipmgdti bbooksdipm0_ where (bbooksdipm0_.download_date_1 is null) and bbooksdipm0_.batch_num=?
+2022-08-18 10:10:40.779 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([audit_number1_2_] : [BIGINT]) - [263]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([batch_num2_2_] : [BIGINT]) - [261]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_created3_2_] : [TIMESTAMP]) - [2022-08-18 00:00:00.0]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([distro_id4_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dmt_code5_2_] : [INTEGER]) - [2]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_6_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_7_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_backup8_2_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.834 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_permanente9_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.835 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_stage10_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.835 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fob_terms_desc11_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.835 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([frt_terms_desc12_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([net_cost_flag13_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre_archivo14_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_number15_2_] : [INTEGER]) - [901]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_aal_method16_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_allocator17_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_apply_buy_mul18_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_apply_dc_pack19_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_call_off_po20_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.837 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cancel_date21_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.838 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cncl_by_date22_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.838 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dc_pack_qty23_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.838 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dist_sell_qty24_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.839 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_tech_key25_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.840 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_type26_2_] : [INTEGER]) - [1]
+2022-08-18 10:10:40.840 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_exp_rct_date27_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.840 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_po_num28_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.845 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_rct_date29_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.845 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_fob30_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.845 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_line_number31_2_] : [INTEGER]) - [1]
+2022-08-18 10:10:40.845 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_loc_curr32_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.845 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_manual_dist33_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.846 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_otb_bud_date34_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_cost35_2_] : [INTEGER]) - [40]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_net_cost36_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_qty37_2_] : [INTEGER]) - [36]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pay_date38_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pis_date39_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_notes40_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_number41_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_prd_vendor42_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_reallocate43_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_recv_notes44_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_res_sell_qty45_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_retail46_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_sell_cost47_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.866 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_sell_qty48_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.867 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_seq_num49_2_] : [INTEGER]) - [0]
+2022-08-18 10:10:40.867 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_date50_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.867 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_via51_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.868 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_spread_mult52_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.868 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_hm53_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.868 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_lc54_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.868 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_po55_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_hm56_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_po57_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_track_code58_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_cross_dock59_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_number60_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_upc61_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rcv_qc_exp62_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([ship_via_desc63_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.869 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([style_prd_lvl_nbr64_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.870 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([tran_type65_2_] : [VARCHAR]) - [A]
+2022-08-18 10:10:40.871 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([trf_alloc_id66_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.872 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_apt_desc67_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.874 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_pack_id68_2_] : [VARCHAR]) - [5646465                  ]
+2022-08-18 10:10:40.878 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_qty69_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.878 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_std_pack70_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.878 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([audit_number1_2_] : [BIGINT]) - [264]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([batch_num2_2_] : [BIGINT]) - [261]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_created3_2_] : [TIMESTAMP]) - [2022-08-18 00:00:00.0]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([distro_id4_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dmt_code5_2_] : [INTEGER]) - [2]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_6_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_7_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_backup8_2_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_permanente9_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_stage10_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fob_terms_desc11_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([frt_terms_desc12_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([net_cost_flag13_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre_archivo14_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_number15_2_] : [INTEGER]) - [901]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_aal_method16_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_allocator17_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_apply_buy_mul18_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_apply_dc_pack19_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_call_off_po20_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.879 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cancel_date21_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cncl_by_date22_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dc_pack_qty23_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dist_sell_qty24_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_tech_key25_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_type26_2_] : [INTEGER]) - [1]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_exp_rct_date27_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_po_num28_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_rct_date29_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_fob30_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_line_number31_2_] : [INTEGER]) - [2]
+2022-08-18 10:10:40.880 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_loc_curr32_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_manual_dist33_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_otb_bud_date34_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_cost35_2_] : [INTEGER]) - [40]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_net_cost36_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_qty37_2_] : [INTEGER]) - [36]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pay_date38_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pis_date39_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_notes40_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_number41_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_prd_vendor42_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_reallocate43_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_recv_notes44_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_res_sell_qty45_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_retail46_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_sell_cost47_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_sell_qty48_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_seq_num49_2_] : [INTEGER]) - [0]
+2022-08-18 10:10:40.881 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_date50_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_via51_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_spread_mult52_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_hm53_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_lc54_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_po55_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_hm56_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_po57_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_track_code58_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_cross_dock59_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_number60_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_upc61_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rcv_qc_exp62_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([ship_via_desc63_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([style_prd_lvl_nbr64_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([tran_type65_2_] : [VARCHAR]) - [A]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([trf_alloc_id66_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_apt_desc67_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_pack_id68_2_] : [VARCHAR]) - [2150968                  ]
+2022-08-18 10:10:40.882 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_qty69_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.883 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_std_pack70_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([audit_number1_2_] : [BIGINT]) - [265]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([batch_num2_2_] : [BIGINT]) - [261]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_created3_2_] : [TIMESTAMP]) - [2022-08-18 00:00:00.0]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([distro_id4_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dmt_code5_2_] : [INTEGER]) - [2]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_6_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.884 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_7_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.885 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_backup8_2_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_permanente9_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_stage10_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fob_terms_desc11_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([frt_terms_desc12_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([net_cost_flag13_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre_archivo14_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_number15_2_] : [INTEGER]) - [901]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_aal_method16_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_allocator17_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_apply_buy_mul18_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_apply_dc_pack19_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_call_off_po20_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cancel_date21_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cncl_by_date22_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dc_pack_qty23_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dist_sell_qty24_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_tech_key25_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_dtl_type26_2_] : [INTEGER]) - [1]
+2022-08-18 10:10:40.888 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_exp_rct_date27_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_po_num28_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_rct_date29_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_fob30_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_line_number31_2_] : [INTEGER]) - [3]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_loc_curr32_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_manual_dist33_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_otb_bud_date34_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_cost35_2_] : [INTEGER]) - [40]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_net_cost36_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.890 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pack_qty37_2_] : [INTEGER]) - [36]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pay_date38_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pis_date39_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_notes40_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_number41_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_prd_vendor42_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_reallocate43_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_recv_notes44_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_res_sell_qty45_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_retail46_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_sell_cost47_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.891 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_sell_qty48_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_seq_num49_2_] : [INTEGER]) - [0]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_date50_2_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_via51_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_spread_mult52_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_hm53_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_lc54_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_po55_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_hm56_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_po57_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.893 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_track_code58_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.895 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_cross_dock59_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.896 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_lvl_number60_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.896 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([prd_upc61_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rcv_qc_exp62_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([ship_via_desc63_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([style_prd_lvl_nbr64_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([tran_type65_2_] : [VARCHAR]) - [A]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([trf_alloc_id66_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_apt_desc67_2_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_pack_id68_2_] : [VARCHAR]) - [2150967                  ]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_qty69_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.897 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_case_std_pack70_2_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.950 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select bbooksdipm0_.audit_number as audit_number1_3_, bbooksdipm0_.apply_vpc_chgalw as apply_vpc_chgalw2_3_, bbooksdipm0_.bas_usr_name as bas_usr_name3_3_, bbooksdipm0_.batch_num as batch_num4_3_, bbooksdipm0_.cap_chain_name as cap_chain_name5_3_, bbooksdipm0_.curr_code as curr_code6_3_, bbooksdipm0_.date_created as date_created7_3_, bbooksdipm0_.distro_id as distro_id8_3_, bbooksdipm0_.dmt_code as dmt_code9_3_, bbooksdipm0_.download_date_1 as download_date_10_3_, bbooksdipm0_.download_date_2 as download_date_11_3_, bbooksdipm0_.fecha_backup as fecha_backup12_3_, bbooksdipm0_.fecha_permanente as fecha_permanente13_3_, bbooksdipm0_.fecha_stage as fecha_stage14_3_, bbooksdipm0_.fob_terms_desc as fob_terms_desc15_3_, bbooksdipm0_.frt_terms_desc as frt_terms_desc16_3_, bbooksdipm0_.jda_origin as jda_origin17_3_, bbooksdipm0_.nombre_archivo as nombre_archivo18_3_, bbooksdipm0_.org_lvl_number as org_lvl_number19_3_, bbooksdipm0_.pmg_adv_rpl_ref_nbr as pmg_adv_rpl_ref_n20_3_, bbooksdipm0_.pmg_allocator as pmg_allocator21_3_, bbooksdipm0_.pmg_buyer as pmg_buyer22_3_, bbooksdipm0_.pmg_cancel_date as pmg_cancel_date23_3_, bbooksdipm0_.pmg_cncl_by_date as pmg_cncl_by_date24_3_, bbooksdipm0_.pmg_cnl_reas_cd as pmg_cnl_reas_cd25_3_, bbooksdipm0_.pmg_consol_center as pmg_consol_center26_3_, bbooksdipm0_.pmg_effect_date as pmg_effect_date27_3_, bbooksdipm0_.pmg_entry_date as pmg_entry_date28_3_, bbooksdipm0_.pmg_exp_rct_date as pmg_exp_rct_date29_3_, bbooksdipm0_.pmg_ext_po_num as pmg_ext_po_num30_3_, bbooksdipm0_.pmg_ext_rct_date as pmg_ext_rct_date31_3_, bbooksdipm0_.pmg_fmt_code as pmg_fmt_code32_3_, bbooksdipm0_.pmg_fob as pmg_fob33_3_, bbooksdipm0_.pmg_lc_number as pmg_lc_number34_3_, bbooksdipm0_.pmg_otb_bud_date as pmg_otb_bud_date35_3_, bbooksdipm0_.pmg_pay_date as pmg_pay_date36_3_, bbooksdipm0_.pmg_pis_date as pmg_pis_date37_3_, bbooksdipm0_.pmg_po_notes as pmg_po_notes38_3_, bbooksdipm0_.pmg_po_number as pmg_po_number39_3_, bbooksdipm0_.pmg_rate as pmg_rate40_3_, bbooksdipm0_.pmg_rate_override as pmg_rate_override41_3_, bbooksdipm0_.pmg_reallocate as pmg_reallocate42_3_, bbooksdipm0_.pmg_recv_notes as pmg_recv_notes43_3_, bbooksdipm0_.pmg_req_flag as pmg_req_flag44_3_, bbooksdipm0_.pmg_ship_date as pmg_ship_date45_3_, bbooksdipm0_.pmg_ship_via as pmg_ship_via46_3_, bbooksdipm0_.pmg_supp_chn_code as pmg_supp_chn_code47_3_, bbooksdipm0_.pmg_tax_exc_hm as pmg_tax_exc_hm48_3_, bbooksdipm0_.pmg_tax_exc_lc as pmg_tax_exc_lc49_3_, bbooksdipm0_.pmg_tax_exc_po as pmg_tax_exc_po50_3_, bbooksdipm0_.pmg_tot_tax_hm as pmg_tot_tax_hm51_3_, bbooksdipm0_.pmg_tot_tax_po as pmg_tot_tax_po52_3_, bbooksdipm0_.pmg_type_name as pmg_type_name53_3_, bbooksdipm0_.po_auto_release as po_auto_release54_3_, bbooksdipm0_.poe_city as poe_city55_3_, bbooksdipm0_.poe_cntry_name as poe_cntry_name56_3_, bbooksdipm0_.ship_via_desc as ship_via_desc57_3_, bbooksdipm0_.thread_id as thread_id58_3_, bbooksdipm0_.tran_type as tran_type59_3_, bbooksdipm0_.trf_alloc_id as trf_alloc_id60_3_, bbooksdipm0_.vendor_number as vendor_number61_3_, bbooksdipm0_.vpc_apt_desc as vpc_apt_desc62_3_, bbooksdipm0_.vpc_shp_point as vpc_shp_point63_3_ from bbook_sdipmghdi bbooksdipm0_ where (bbooksdipm0_.download_date_1 is null) and bbooksdipm0_.batch_num=?
+2022-08-18 10:10:40.952 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:40.983 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([audit_number1_3_] : [BIGINT]) - [262]
+2022-08-18 10:10:40.984 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([apply_vpc_chgalw2_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([bas_usr_name3_3_] : [VARCHAR]) - [JDA User]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([batch_num4_3_] : [BIGINT]) - [261]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([cap_chain_name5_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_code6_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_created7_3_] : [TIMESTAMP]) - [2022-08-18 00:00:00.0]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([distro_id8_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dmt_code9_3_] : [INTEGER]) - [2]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_10_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([download_date_11_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_backup12_3_] : [TIMESTAMP]) - [2022-08-18 10:10:41.0]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_permanente13_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fecha_stage14_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([fob_terms_desc15_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([frt_terms_desc16_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.985 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([jda_origin17_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre_archivo18_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([org_lvl_number19_3_] : [INTEGER]) - [901]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_adv_rpl_ref_n20_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_allocator21_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_buyer22_3_] : [VARCHAR]) - [BYRON SOTO]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cancel_date23_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cncl_by_date24_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_cnl_reas_cd25_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_consol_center26_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_effect_date27_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_entry_date28_3_] : [TIMESTAMP]) - [2022-08-18 00:00:00.0]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_exp_rct_date29_3_] : [TIMESTAMP]) - [2022-10-06 00:00:00.0]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_po_num30_3_] : [VARCHAR]) - [1197                ]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ext_rct_date31_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_fmt_code32_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_fob33_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:40.986 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_lc_number34_3_] : [VARCHAR]) - [22JC037]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_otb_bud_date35_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pay_date36_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_pis_date37_3_] : [TIMESTAMP]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_notes38_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_po_number39_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_rate40_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_rate_override41_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_reallocate42_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.011 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_recv_notes43_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_req_flag44_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_date45_3_] : [TIMESTAMP]) - [2022-08-11 00:00:00.0]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_ship_via46_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_supp_chn_code47_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_hm48_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_lc49_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tax_exc_po50_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_hm51_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_tot_tax_po52_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([pmg_type_name53_3_] : [VARCHAR]) - [Importada                               ]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([po_auto_release54_3_] : [VARCHAR]) - [T]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([poe_city55_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([poe_cntry_name56_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([ship_via_desc57_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([thread_id58_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([tran_type59_3_] : [VARCHAR]) - [A]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([trf_alloc_id60_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vendor_number61_3_] : [VARCHAR]) - [1018           ]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_apt_desc62_3_] : [VARCHAR]) - [null]
+2022-08-18 10:10:41.012 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vpc_shp_point63_3_] : [INTEGER]) - [null]
+2022-08-18 10:10:46.655 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : update app_sam.bbook_sdiPmgcai s set s.download_date_1 = sysdate where batch_num = ?
+2022-08-18 10:10:46.656 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:46.694 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : update app_sam.bbook_sdipmgdti s set s.download_date_1 = sysdate where batch_num = ?
+2022-08-18 10:10:46.694 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:46.726 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : update app_sam.bbook_sdipmghdi s set s.download_date_1 = sysdate where batch_num = ?
+2022-08-18 10:10:46.727 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 10:10:46.758 DEBUG 10760 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : update app_sam.bbook_sdivalmsi s set s.download_date_1 = sysdate where batch_num = ?
+2022-08-18 10:10:46.759 TRACE 10760 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [261]
+2022-08-18 11:08:48.688  INFO 10760 --- [RMI TCP Connection(66)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-18 11:08:49.005  INFO 10760 --- [RMI TCP Connection(66)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-18 11:08:49.036 TRACE 10760 --- [RMI TCP Connection(66)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@460eb276] for TypeConfiguration
+2022-08-18 11:08:49.036 DEBUG 10760 --- [RMI TCP Connection(66)-127.0.0.1] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5726cb6a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@460eb276]
+2022-08-18 11:08:49.036  INFO 10760 --- [RMI TCP Connection(66)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-18 11:08:49.208  INFO 10760 --- [RMI TCP Connection(66)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
